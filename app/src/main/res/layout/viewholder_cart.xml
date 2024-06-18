@@ -4,7 +4,7 @@
     android:layout_height="100dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginHorizontal="16dp"
+
     android:layout_marginVertical="4dp"
     android:background="@drawable/blur_back"
     app:blurOverlayColor="#20000000"

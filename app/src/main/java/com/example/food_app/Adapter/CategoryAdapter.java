@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -86,7 +85,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             titreCategory = itemView.findViewById(R.id.titreCategory);
-            blurView = itemView.findViewById(R.id.blurview);
+            blurView = itemView.findViewById(R.id.blurview2);
             pic = itemView.findViewById(R.id.imageCategory);
         }
     }

@@ -10,7 +10,7 @@
 
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Votre chariot est vide"
@@ -73,7 +73,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="32dp">
 
                 <eightbitlab.com.blurview.BlurView
                     android:id="@+id/blurView_cart"
@@ -82,22 +83,9 @@
                     android:layout_weight="1"
                     android:background="@drawable/blur_back">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/editTextText2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#00ffffff"
-                        android:hint="Enter your code"
-                        app:boxStrokeWidth="0dp"
-                        android:textColorHint="#B0FFFFFF">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            />
-                    </com.google.android.material.textfield.TextInputLayout>
 
 
-                    <!--<EditText
+                    <EditText
                         android:id="@+id/editTextText2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -106,7 +94,7 @@
                         android:inputType="text"
                         android:paddingStart="10dp"
                         android:hint="Entre votre code"
-                        android:textColorHint="#B0FFFFFF"/>-->
+                        android:textColorHint="#B0FFFFFF"/>
 
                 </eightbitlab.com.blurview.BlurView>
 
@@ -127,12 +115,13 @@
                 android:textStyle="bold"/>
 
             <eightbitlab.com.blurview.BlurView
+                android:id="@+id/blurview2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/blur_back"
+
+
                 android:paddingHorizontal="10dp"
-
-
                 app:blurOverlayColor="#20000000">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -218,11 +207,11 @@
                         android:id="@+id/textView14"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
                         android:text="Total"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold"
-                        android:layout_marginTop="10dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/view" />
 

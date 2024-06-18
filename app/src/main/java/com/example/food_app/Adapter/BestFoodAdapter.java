@@ -93,7 +93,7 @@ public class BestFoodAdapter extends RecyclerView.Adapter<BestFoodAdapter.viewHo
             starTxt = itemView.findViewById(R.id.star_food);
             pic = itemView.findViewById(R.id.image_food);
             timeTxt = itemView.findViewById(R.id.time_food);
-            blurView = itemView.findViewById(R.id.blurview);
+            blurView = itemView.findViewById(R.id.blurview2);
 
         }
     }

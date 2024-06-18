@@ -58,14 +58,14 @@ public class DetailActivity extends BaseActivity {
         ViewGroup rootView = decorView.findViewById(android.R.id.content);
         Drawable windowBackground = decorView.getBackground();
 
-        binding.blurview.setupWith(rootView, new RenderScriptBlur(this))
+        binding.blurview1.setupWith(rootView, new RenderScriptBlur(this))
                 .setFrameClearDrawable(windowBackground)
                 .setBlurRadius(radius);
 
-        binding.blurview.setOutlineProvider(ViewOutlineProvider.BACKGROUND);
-        binding.blurview.setClipToOutline(true);
+        binding.blurview1.setOutlineProvider(ViewOutlineProvider.BACKGROUND);
+        binding.blurview1.setClipToOutline(true);
 
-        binding.blurview2.setupWith(rootView, new RenderScriptBlur(this))
+        binding.blurview1.setupWith(rootView, new RenderScriptBlur(this))
                 .setFrameClearDrawable(windowBackground)
                 .setBlurRadius(radius);
 
@@ -89,19 +89,19 @@ public class DetailActivity extends BaseActivity {
 
 
 
-        binding.detailBtnPus.setOnClickListener(v -> {
+        binding.detailBtnBack.setOnClickListener(v -> {
             number++;
-            binding.detailNumberFood.setText(number + "");
+            binding.detailTimeFood.setText(number + "");
             binding.detailTotalPriceFood.setText((object.getPrice() * number) + "$");
         });
 
-        binding.detailBtnMoin.setOnClickListener(v -> {
+        binding.detailBtnBack.setOnClickListener(v -> {
             if (number > 1) {
                 number--;
-                binding.detailNumberFood.setText(number + "");
+                binding.detailTimeFood.setText(number + "");
                 binding.detailTotalPriceFood.setText((object.getPrice() * number) + "$");
             } else if (number == 1) {
-                binding.detailNumberFood.setText("0");
+                binding.detailTimeFood.setText("0");
                 binding.detailTotalPriceFood.setText( "$0");
                 number = 0;
 

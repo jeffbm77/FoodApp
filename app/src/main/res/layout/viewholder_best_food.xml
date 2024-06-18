@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingClass"
     android:layout_margin="8dp"
-    android:id="@+id/blurview"
+    android:id="@+id/blurview2"
     app:blurOverlayColor="#20000000"
     android:background="@drawable/blur_back">
 

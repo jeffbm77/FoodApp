@@ -44,6 +44,10 @@ public class MainActivity extends  BaseActivity{
     }
 
     private void setVariable() {
+        binding.btnCart.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, CartActivity.class);
+            startActivity(intent);
+        });
 
         //
         binding.searchBtn.setOnClickListener(v -> {
