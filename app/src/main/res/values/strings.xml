@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Food_App</string>
+    <string name="lorem">Lorem ipsum is a placeholder text commonly used by designers and publishers to fill space in a document layout. It\'s essentially gibberish Latin that allows you to see how the text will look on a page without getting distracted by the actual content.</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eightbitlab.com.blurview.BlurView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="4dp"
+    android:background="@drawable/blur_back"
+    app:blurOverlayColor="#20000000"
+    android:id="@+id/blurView_cart_holder">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cart_Btn_Pus"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/oval_back"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_Btn_Moin"
+            app:layout_constraintStart_toEndOf="@+id/cart_Number_Food"
+            app:layout_constraintTop_toTopOf="@+id/cart_Btn_Moin"
+            tools:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/cart_Btn_Moin"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/oval_back"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            tools:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_Image_Food"
+            app:layout_constraintStart_toStartOf="@+id/cart_Price_Food"
+            app:layout_constraintTop_toBottomOf="@+id/cart_Price_Food" />
+
+        <TextView
+            android:id="@+id/cart_Number_Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="0"
+            android:textColor="@color/white"
+            tools:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_Btn_Moin"
+            app:layout_constraintStart_toEndOf="@+id/cart_Btn_Moin"
+            app:layout_constraintTop_toTopOf="@+id/cart_Btn_Moin"
+            tools:text="5" />
+
+        <ImageView
+            android:id="@+id/cart_Image_Food"
+            android:layout_width="123dp"
+            android:layout_height="96dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/food" />
+
+        <TextView
+            android:id="@+id/cart_Titre_Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="titre"
+            tools:textColor="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cart_Image_Food"
+            app:layout_constraintTop_toTopOf="@+id/cart_Image_Food" />
+
+        <TextView
+            android:id="@+id/cart_Price_Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="$0"
+            tools:textColor="@color/black"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/cart_Titre_Food"
+            app:layout_constraintTop_toBottomOf="@+id/cart_Titre_Food" />
+
+        <TextView
+            android:id="@+id/cart_Total_Price_Food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="$0"
+            tools:textColor="@color/black"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cart_Btn_Moin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cart_Btn_Moin"
+            app:layout_constraintVertical_bias="0.555" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</eightbitlab.com.blurview.BlurView>

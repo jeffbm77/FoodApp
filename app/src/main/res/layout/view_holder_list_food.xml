@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<eightbitlab.com.blurview.BlurView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:background="@drawable/blur_back"
+    app:blurOverlayColor="#20000000"
+    android:id="@+id/blurview_holder">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/list_Image_food_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="111dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:srcCompat="@drawable/food"
+            android:scaleType="centerCrop"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_Image_food_holder"
+            android:paddingStart="10dp">
+
+            <TextView
+                android:id="@+id/list_titre_Food_holder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                tool:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/list_Time_Food_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="time"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                tool:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list_titre_Food_holder" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/list_Time_Food_holder"
+                app:layout_constraintStart_toEndOf="@+id/list_Time_Food_holder"
+                app:layout_constraintTop_toTopOf="@+id/list_Time_Food_holder"
+                app:srcCompat="@drawable/time"
+                tool:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/list_Price_Food_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="$0"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/list_Time_Food_holder"
+                app:layout_constraintTop_toBottomOf="@+id/list_Time_Food_holder"
+                tool:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/list_Start_Food_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                tool:text="4"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                tool:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/list_Price_Food_holder"
+                app:layout_constraintEnd_toStartOf="@+id/imageView10"
+                app:layout_constraintTop_toBottomOf="@+id/list_Time_Food_holder" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/list_Start_Food_holder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/list_Start_Food_holder"
+                app:srcCompat="@drawable/star" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</eightbitlab.com.blurview.BlurView>
