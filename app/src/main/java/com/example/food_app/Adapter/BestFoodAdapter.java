@@ -72,8 +72,6 @@ public class BestFoodAdapter extends RecyclerView.Adapter<BestFoodAdapter.viewHo
             intent.putExtra("object", items.get(position));
             context.startActivity(intent);
         });
-
-
     }
 
     @Override

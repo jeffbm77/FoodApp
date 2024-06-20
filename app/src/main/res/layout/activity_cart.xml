@@ -65,7 +65,8 @@
                 android:id="@+id/recyclerView_cart_Food"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="8dp">
+                android:padding="8dp"
+                android:layout_marginTop="20dp">
 
             </androidx.recyclerview.widget.RecyclerView>
 
@@ -74,7 +75,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginBottom="10dp"
-                android:layout_marginTop="32dp">
+                android:layout_marginVertical="32dp">
 
                 <eightbitlab.com.blurview.BlurView
                     android:id="@+id/blurView_cart"
@@ -112,15 +113,15 @@
                 android:text="Récapitulatif de la commande"
                 android:textSize="18sp"
                 android:textColor="@color/white"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
 
             <eightbitlab.com.blurview.BlurView
                 android:id="@+id/blurview2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/blur_back"
-
-
+                android:layout_marginVertical="10dp"
                 android:paddingHorizontal="10dp"
                 app:blurOverlayColor="#20000000">
 
@@ -143,7 +144,7 @@
                         android:id="@+id/totaFood"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$0"
+                        tools:text="$0"
                         android:textColor="@color/white"
                         android:textSize="16sp"
 
@@ -176,7 +177,7 @@
                         android:id="@+id/tax"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$0"
+                        tools:text="$0"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView11"
@@ -187,7 +188,7 @@
                         android:id="@+id/livreson"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$0"
+                        tools:text="$0"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -219,7 +220,7 @@
                         android:id="@+id/total"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$0"
+                        tools:text="$0"
                         android:textColor="@color/white"
                         android:textSize="16sp"
                         app:layout_constraintBottom_toBottomOf="@+id/textView14"

@@ -28,7 +28,7 @@ import eightbitlab.com.blurview.RenderScriptBlur;
 public class DetailActivity extends BaseActivity {
     private ActivityDetailBinding binding;
     private Foods object;
-    private int number = 0;
+    private int number = 1;
     private ManagmentCart managmentCart;
 
     @Override
@@ -86,19 +86,21 @@ public class DetailActivity extends BaseActivity {
         binding.detailNumberStart.setText(object.getStar() + "Rating");
         binding.ratingBar.setRating((float) object.getStar());
         binding.detailTotalPriceFood.setText((object.getPrice() * number) + "$");
+        binding.cartNumberFood.setText(object.getNumberInCart());
 
 
 
-        binding.detailBtnBack.setOnClickListener(v -> {
+
+        binding.cartBtnPus.setOnClickListener(v -> {
             number++;
-            binding.detailTimeFood.setText(number + "");
+            binding.cartNumberFood.setText(number + "");
             binding.detailTotalPriceFood.setText((object.getPrice() * number) + "$");
         });
 
-        binding.detailBtnBack.setOnClickListener(v -> {
+        binding.cartBtnMoin.setOnClickListener(v -> {
             if (number > 1) {
                 number--;
-                binding.detailTimeFood.setText(number + "");
+                binding.cartNumberFood.setText(number + "");
                 binding.detailTotalPriceFood.setText((object.getPrice() * number) + "$");
             } else if (number == 1) {
                 binding.detailTimeFood.setText("0");

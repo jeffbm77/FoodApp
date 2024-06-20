@@ -38,6 +38,7 @@ public class CartActivity extends BaseActivity {
         setVariables();
         calculateTotalPrice();
         initList();
+        setBlurEffect();
 
 
     }
@@ -79,6 +80,7 @@ public class CartActivity extends BaseActivity {
     }
 
     private void setVariables() {
+
         binding.cartBtnBack.setOnClickListener(v -> finish());
     }
 
@@ -90,8 +92,8 @@ public class CartActivity extends BaseActivity {
         double total = Math.round((managmentCart.getTotalFee() + tax + livraison) * 100.0) / 100.0;
         double subTotal = Math.round((managmentCart.getTotalFee()) * 100.0) / 100.0;
 
-        binding.totaFood.setText("$" + total);
-        binding.total.setText("$" + subTotal);
+        binding.total.setText("$" + total);
+        binding.totaFood.setText("$" + subTotal);
         binding.tax.setText("$" + tax);
         binding.livreson.setText("$" + livraison);
 

@@ -107,7 +107,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.viewHolder> {
             numberItemsTxt = itemView.findViewById(R.id.cart_Number_Food);
             totalPriceTxt = itemView.findViewById(R.id.cart_Total_Price_Food);
             btnPlus = itemView.findViewById(R.id.cart_Btn_Pus);
-            btnMoin = itemView.findViewById(R.id.cart_Btn_Pus);
+            btnMoin = itemView.findViewById(R.id.cart_Btn_Moin);
             pic = itemView.findViewById(R.id.cart_Image_Food);
             blurView = itemView.findViewById(R.id.blurView_cart_holder);
         }
